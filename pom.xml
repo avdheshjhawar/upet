@@ -7,6 +7,7 @@
     <groupId>upet</groupId>
     <artifactId>upet</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <dependencies>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -14,6 +15,7 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>6.10.4</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
@@ -23,6 +25,14 @@
             <version>6.10.4</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>6.10.4</version>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
         <dependency>
@@ -63,10 +73,13 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/resources/features</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
@@ -85,5 +98,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
