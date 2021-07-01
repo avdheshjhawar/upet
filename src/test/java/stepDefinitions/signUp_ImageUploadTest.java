@@ -16,7 +16,7 @@ import utils.constants;
 
 import static org.junit.Assert.assertEquals;
 
-public class signUp_ImageUpload {
+public class signUp_ImageUploadTest {
 
     /**
      * create class objects
