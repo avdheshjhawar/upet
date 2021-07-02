@@ -49,4 +49,7 @@ Path: src/main/java/utils
 Browser Stack Integration and Browser capabilities, and selenide configuration setup on base test class.
 Path: src/main/java/utils
 
+Git action yml file : maven.yml
+Path : .github/workflows/maven.yml
+
 
