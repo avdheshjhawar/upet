@@ -76,14 +76,13 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
-        <testSourceDirectory>${project.basedir}/src/test/resources/features</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
+                    <fork>true</fork>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
@@ -92,7 +91,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
+                <version>3.0.0-M5</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
